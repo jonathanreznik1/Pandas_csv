@@ -4,17 +4,17 @@ import csv
 # Make sure to python install -r requirements.txt
 
 # Insert path to file
-CSV_File1 = 'LA City Council District 5 EMAIL List.xlsx - Sheet1.csv'
-CSV_File2 = 'LACCD 2022 Voter History - NG18NG20.xlsx - Sheet1.csv'
+CSV_File1 = '{filename1}.csv'
+CSV_File2 = '{filename2}.csv'
 
 # Specify field to join 
-join_col = 'voter_id'
+join_col = '{col_name}'
 
 # Specify filters for data fields and values
-field1 = '11/03/2020 4193'
-value1 = 'N'
-field2 ='11/06/2018 3861'
-value2 = 'N'
+field1 = '{field1}'
+value1 = '{val1}'
+field2 ='{field2}'
+value2 = '{val2}'
 
 # Pandas
 df1 = pd.read_csv(CSV_File1)
